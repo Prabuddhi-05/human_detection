@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'human_detection'
+package_name = 'human_detection_fisheye_fisheye'
 
 setup(
     name=package_name,
@@ -23,11 +23,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-          'fisheye_camera = human_detection.fisheye_camera:main',
-          'detection_fisheye = human_detection.detection_fisheye:main',
-          'detection_rgbd = human_detection.detection_rgbd:main',
-          'fisheye_camera_multi = human_detection.fisheye_camera_multi:main',
-          'fisheye_camera_multiple = human_detection.fisheye_camera_multiple:main',
+          'fisheye_camera = human_detection_fisheye_fisheye.fisheye_camera:main',
+          'detection_fisheye = human_detection_fisheye_fisheye.detection_fisheye:main',
+          'detection_rgbd = human_detection_fisheye_fisheye.detection_rgbd:main',
+          'fisheye_camera_multi = human_detection_fisheye_fisheye.fisheye_camera_multi:main',
+          'fisheye_camera_multiple = human_detection_fisheye_fisheye.fisheye_camera_multiple:main',
         ],
     },
 )
