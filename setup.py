@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'human_detection'
+package_name = 'strawberry_data_collection'
 
 setup(
     name=package_name,
@@ -23,11 +23,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-          'fisheye_camera = human_detection.fisheye_camera:main',
-          'detection_fisheye = human_detection.detection_fisheye:main',
-          'detection_rgbd = human_detection.detection_rgbd:main',
-          'fisheye_camera_multi = human_detection.fisheye_camera_multi:main',
-          'fisheye_camera_multiple = human_detection.fisheye_camera_multiple:main',
+          'fisheye_camera = strawberry_data_collection.fisheye_camera:main',
+          'detection_fisheye = strawberry_data_collection.detection_fisheye:main',
+          'detection_rgbd = strawberry_data_collection_rgbd:main',
+          'fisheye_camera_multi = strawberry_data_collection.fisheye_camera_multi:main',
+          'fisheye_camera_multiple = strawberry_data_collection.fisheye_camera_multiple:main',
         ],
     },
 )
