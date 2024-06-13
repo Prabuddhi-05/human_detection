@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-    <!-- Launch file to start the fisheye camera nodes -->
+    <!-- Launch file to start the 4 fisheye camera nodes -->
 
     <node pkg="human_detection" exec="fisheye_camera_multiple" name="fisheye_camera_node_1" output="screen">
         <param name="serial_no" value="SN00011"/>
